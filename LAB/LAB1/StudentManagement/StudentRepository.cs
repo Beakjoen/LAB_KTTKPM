@@ -22,7 +22,7 @@ namespace StudentManagement
             foreach (var line in File.ReadAllLines(filePath))
             {
                 if (string.IsNullOrWhiteSpace(line)) continue;
-                
+
                 var student = Student.FromFileString(line);
                 _students.Add(student);
                 if (student.Id >= _nextId)
@@ -32,9 +32,17 @@ namespace StudentManagement
 
         public List<Student> GetAll() => _students;
 
-        public Student Add(Student student)
+        public Student Add(string name, string email, string address, int age, double grade)
         {
-            student.Id = _nextId++;
+            var student = new Student
+            {
+                Id = _nextId++,
+                Name = name,
+                Email = email,
+                Address = address,
+                Age = age,
+                Grade = grade
+            };
             _students.Add(student);
             SaveToFile();
             return student;
@@ -57,16 +65,16 @@ namespace StudentManagement
             return false;
         }
 
-        public bool Update(int id, Student updatedStudent)
+        public bool Update(int id, string name, string email, string address, int age, double grade)
         {
             var student = _students.FirstOrDefault(s => s.Id == id);
             if (student != null)
             {
-                student.Name = updatedStudent.Name;
-                student.Email = updatedStudent.Email;
-                student.Address = updatedStudent.Address;
-                student.Age = updatedStudent.Age;
-                student.Grade = updatedStudent.Grade;
+                student.Name = name;
+                student.Email = email;
+                student.Address = address;
+                student.Age = age;
+                student.Grade = grade;
                 SaveToFile();
                 return true;
             }

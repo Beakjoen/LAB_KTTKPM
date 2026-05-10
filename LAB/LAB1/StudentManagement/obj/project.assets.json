@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KT_TKPM\\LAB\\LAB1\\StudentManagement\\StudentManagement.csproj",
+      "projectUniqueName": "D:\\KT_TKPM\\LAB_KTTKPM\\LAB\\LAB1\\StudentManagement\\StudentManagement.csproj",
       "projectName": "StudentManagement",
-      "projectPath": "D:\\KT_TKPM\\LAB\\LAB1\\StudentManagement\\StudentManagement.csproj",
+      "projectPath": "D:\\KT_TKPM\\LAB_KTTKPM\\LAB\\LAB1\\StudentManagement\\StudentManagement.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "D:\\KT_TKPM\\LAB\\LAB1\\StudentManagement\\obj\\",
+      "outputPath": "D:\\KT_TKPM\\LAB_KTTKPM\\LAB\\LAB1\\StudentManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

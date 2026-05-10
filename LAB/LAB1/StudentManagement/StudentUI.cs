@@ -155,7 +155,7 @@ namespace StudentManagement
             Console.Write("Nhập tên cần tìm: ");
             string name = Console.ReadLine();
             var students = studentService.SearchByName(name);
-            
+
             Console.WriteLine("\n=== KẾT QUẢ TÌM KIẾM ===");
             foreach (var student in students)
                 Console.WriteLine(student);
@@ -168,7 +168,7 @@ namespace StudentManagement
             Console.Write("Nhập địa chỉ cần tìm: ");
             string address = Console.ReadLine();
             var students = studentService.SearchByAddress(address);
-            
+
             Console.WriteLine("\n=== KẾT QUẢ TÌM KIẾM ===");
             foreach (var student in students)
                 Console.WriteLine(student);
@@ -187,7 +187,7 @@ namespace StudentManagement
                 return;
 
             var students = studentService.SearchByGrade(minGrade, maxGrade);
-            
+
             Console.WriteLine("\n=== KẾT QUẢ TÌM KIẾM ===");
             foreach (var student in students)
                 Console.WriteLine(student);
